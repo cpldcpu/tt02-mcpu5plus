@@ -14,7 +14,7 @@ reg [7:0] accuout;
 wire [5:0] mem_out;
 integer cycles = 0;
 
-user_module_341528610027340372 MCPU5_top ({inst_in,reset,clk},cpu_out);
+cpldcpu_MCPU5plus MCPU5_top ({inst_in,reset,clk},cpu_out);
 instr_mem mem_top(.address(cpu_out),.instruction(mem_out));
 
 initial begin
