@@ -45,28 +45,20 @@ The list of instructions and their encoding is shown below. One challenge in the
 
 Having both NOT and NEG may seems excessive, but the implementation was cheap on resources and some instruction sequences could be simplified.
 
-No boolean logic instructions (AND/OR/NOT/NOR/XOR) are supported since they were not needed in any of my typical test programs.
+No boolean logic instructions (AND/OR/NOT/NOR/XOR) are supported since they were not needed in any of my typical test programs. Text in red designates changes introduced in the "plus" version.
 
-![grafik](https://user-images.githubusercontent.com/4086406/188716202-d0681200-9578-414f-8c06-417b6ae8950d.png)
+![grafik](https://user-images.githubusercontent.com/4086406/203659032-e13c530f-e562-4d85-aa3f-09143ee01ffc.png)
 
 The table below shows common instruction sequences that can be realized with macros.
 
-![grafik](https://user-images.githubusercontent.com/4086406/188716303-d0428667-788e-4f98-bd4b-40d5c7e23e4d.png)
+![grafik](https://user-images.githubusercontent.com/4086406/203659101-74bc7362-8260-4496-8dc3-1d5b81d2c75f.png)
 
 ## Design after placement and routing
 
-The total cell count after synthesis is 489. Adding any additional features did not allow to complete the routing pass.The summary and floorplan below shows the synthesis result for 115x115µm² area, however the design fits perfectly into 100x100µm² as well.
+The total cell count after synthesis is 489. Adding any additional features did not allow to complete the routing pass.The summary and floorplan below shows the synthesis result for 150x170µm² area, however the design fits perfectly into 100x100µm² as well.
 
-![grafik](https://user-images.githubusercontent.com/4086406/188730917-91d6c818-d903-449f-bae3-42abefd206a6.png)
-
-![grafik](https://user-images.githubusercontent.com/4086406/188715948-98719648-8b37-4218-b3ca-6674cf783abc.png)
+![grafik](https://user-images.githubusercontent.com/4086406/203656983-452cd3ca-3c28-4574-80f0-404b9c2e9404.png)
 
 ## Summary
 
 Zinnia+ (MCPU5+) is a successful 8 bit processor implementation considering the TinyTapeout contraints. Both Fibonacci and prime search algorithms were successfully ported and run in the testbench.
-## Original TinyTapeout Readme
------
-
-![](../../workflows/wokwi/badge.svg)
-
-Go to https://tinytapeout.com for instructions!
