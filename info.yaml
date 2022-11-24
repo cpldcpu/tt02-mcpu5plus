@@ -23,7 +23,7 @@ documentation:
   language:     "verilog" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     "https://github.com/cpldcpu/tt02-mcpu5plus"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     0       # Clock frequency in Hz (if required) we are expecting max clock frequency to be ~6khz. Provided on input 0.
-  picture:      ""      # relative path to a picture in your repository
+  picture:      "https://user-images.githubusercontent.com/4086406/188716065-a4d7755b-9020-4291-94e4-f22cf04bb168.png"      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
     - clock
     - reset        # high active
