@@ -15,15 +15,17 @@ project:
 documentation: 
   author:       "cpldcpu"      # Your name
   discord:      "Azure#5593"   # Your discord handle - make sure to include the # part as well
-  title:        "Zinnia+ (MCPU5+)"      # Project title
+  title:        "Zinnia+ (MCPU5+) 8 Bit CPU"      # Project title
   description:  "A minimal 8 bit CPU"      # Short description of what your project does
-  how_it_works: "This is a harvard style accumulator based cpu. Eight bytes of data memory are included on chip. Instructions are fed into the CPU from an external memory."      # Longer description of how the project works
+  how_it_works: "The CPU is based on the Harvard Architecture with separate data and program memories. The data memory is completely internal to the CPU. The program memory is external and is accessed through the I/O. All data has to be loaded as constants through machine code instructions.
+
+Two of the input pins are used for clock and reset, the remaining ones are reserved for instructions and are six bit in length. The output is multiplexed between the program counter (when clk is '1') and the content of the main register, the Accumulator. Accessing the Accumulator allows reading the program output."      # Longer description of how the project works
   how_to_test:  "Execute the shell script 'run.sh primes' in the src folder. This will invoke the testbench with a rom emulator and execute a small program to compute prime numbers."      # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   external_hw:  "External program memory and bus demultiplexer is required."      # Describe any external hardware needed
   language:     "verilog" # other examples include Verilog, Amaranth, VHDL, etc
   doc_link:     "https://github.com/cpldcpu/tt02-mcpu5plus"      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     0       # Clock frequency in Hz (if required) we are expecting max clock frequency to be ~6khz. Provided on input 0.
-  picture:      "https://user-images.githubusercontent.com/4086406/188716065-a4d7755b-9020-4291-94e4-f22cf04bb168.png"      # relative path to a picture in your repository
+  picture:      "https://user-images.githubusercontent.com/4086406/203659032-e13c530f-e562-4d85-aa3f-09143ee01ffc.png"      # relative path to a picture in your repository
   inputs:               # a description of what the inputs do
     - clock
     - reset        # high active
