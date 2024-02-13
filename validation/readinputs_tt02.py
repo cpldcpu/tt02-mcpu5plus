@@ -25,8 +25,6 @@ import utime
 
 OUT_PINS = [28, 27, 26, 22, 6, 7, 8, 9]  # List of out pin numbers
 IN_PINS = [21, 20, 19, 18, 17, 16, 15, 14]  # List of in pin numbers
-SLOW_CLK = 10 # Slow clock on GPIO10
-
 
 def initialize_gpio():
     # Initialize in pins  GPIO as input
@@ -36,9 +34,6 @@ def initialize_gpio():
     # Initialize out pins GPIO as input
     for pin in OUT_PINS:
         Pin(pin, Pin.IN)
-
-    Pin(SLOW_CLK, Pin.IN)
-
 
 def read_in_pins():
     # Read in pins and combine into a byte
@@ -63,7 +58,6 @@ initialize_gpio()
 while True:
     in_byte = read_in_pins()
     out_byte = read_out_pins()
-    clk = Pin(SLOW_CLK, Pin.IN).value()
     print("IN: ", hex(in_byte), "OUT: ", hex(out_byte), "CLK: ", clk)
     utime.sleep_ms(100)
     
