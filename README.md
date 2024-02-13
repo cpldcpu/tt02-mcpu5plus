@@ -1,19 +1,18 @@
-# Zinnia+ (MCPU5+)
+# 🚀 Zinnia+ (MCPU5+)
 
 An 8 bit RISC CPU for [TinyTapeout02](www.tinytapeout.com). Tinytapeout combines a high number of tiny designs on a single IC to be taped out with the Open MPW-7. This offers the opportunity to actually get a design made on a real IC, but also comes with some constraints:
 
-- Maximum allowed area is 150 x 170 µm² in Skywater 130nm CMOS technology. The actual number of useable gates depends on cell size and routing limitations.
+- Maximum allowed area is 150 x 170 µm² in Skywater 130nm CMOS technology (This design targeted only 100x100 µm²). The actual number of useable gates depends on cell size and routing limitations.
 - Only eight digital inputs and eight digital outputs are allowed.
 - I/O will be provided via the scanchain (a long shift register) and is hence rather slow.
 
 This is a slightly upgraded version of MCPU5 that was submitted for tinytapeout01. See MCPU repository [here](https://github.com/cpldcpu/tinytapeout_mcpu5).
-# Content of repository
+# 📂 Content of repository
 
   - [src/](src/) Cleaned up source, Testbench, Assembler and code examples
+  - [validation/](validation/) Test setup with Raspberry Pi Pico
   - See below for design description
-  - [validation](validation/) Test setup with Raspberry Pi Pico
-
-# Design Description
+# 📝 Design Description
 
 ## Top level
 
