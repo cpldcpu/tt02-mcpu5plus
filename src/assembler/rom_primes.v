@@ -26,15 +26,16 @@ reg [5:0] inst;
 		8'h10:	inst = 6'h11;
 		8'h11:	inst = 6'h21;
 		8'h12:	inst = 6'h29;
-		8'h13:	inst = 6'h39;
+		8'h13:	inst = 6'h38;
 		8'h14:	inst = 6'h20;
-		8'h15:	inst = 6'h12;
-		8'h16:	inst = 6'h0F;
-		8'h17:	inst = 6'h30;
-		8'h18:	inst = 6'h3B;
-		8'h19:	inst = 6'h01;
-		8'h1A:	inst = 6'h18;
-		8'h1B:	inst = 6'h0E;
+		8'h15:	inst = 6'h03;
+		8'h16:	inst = 6'h11;
+		8'h17:	inst = 6'h0F;
+		8'h18:	inst = 6'h30;
+		8'h19:	inst = 6'h3B;
+		8'h1A:	inst = 6'h01;
+		8'h1B:	inst = 6'h17;
+		8'h1C:	inst = 6'h0E;
 		default:	inst = 6'b111111;
         endcase
     end

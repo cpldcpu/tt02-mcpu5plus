@@ -1,5 +1,5 @@
-SMAL32 (rev  9/11)              primes.as                    21:22:42  Page  1
-                                                             Wed Sep 07 2022
+SMAL32 (rev  9/11)              primes.as                    13:20:14  Page  1
+                                                             Tue Feb 13 2024
 
                                  1  ;---------------------------------------------------------------------
                                  2  ; MCPU5 primes
@@ -53,18 +53,18 @@
  00000011: 21                   50          ADD     divisor
  00000012: 29                   51          STA     divisor
                                 52  
- 00000013: 39                   53      NEG                 ; while (divisor<number)
+ 00000013: 38                   53      NOT                 ; while (divisor<number)
  00000014: 20                   54      ADD number
- 00000015: 12  0F               55          BCCL loop
+ 00000015: 03  11  0F           55          BCSL loop
                                 56  
-SMAL32 (rev  9/11)              primes.as                    21:22:42  Page  2
-                                                             Wed Sep 07 2022
+SMAL32 (rev  9/11)              primes.as                    13:20:14  Page  2
+                                                             Tue Feb 13 2024
 
                                 57  prime:
- 00000017: 30                   58      LDA number          ; Display prime number
- 00000018: 3B                   59      OUT
+ 00000018: 30                   58      LDA number          ; Display prime number
+ 00000019: 3B                   59      OUT
                                 60  
- 00000019: 01  18  0E           61      JMP outerloop
+ 0000001A: 01  17  0E           61      JMP outerloop
                                 62  
                                 63  END
                     no errors

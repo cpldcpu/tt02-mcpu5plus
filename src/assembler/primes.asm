@@ -50,9 +50,9 @@ innerloop:
 	ADD	divisor
 	STA	divisor
 
-    NEG                 ; while (divisor<number)
+    NOT                 ; while (divisor<number)
     ADD number
-	BCCL loop
+	BCSL loop
 
 prime:
     LDA number          ; Display prime number
