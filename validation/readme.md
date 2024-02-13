@@ -16,7 +16,7 @@ These examples use asynchronous clocking via in[0] and are therefore limited to 
 
 - A Raspberry Pi Pico has to be soldered to the rear side of the TinyTapeout Demo Board (see picture below).
 - The micropython up2 images has to be installed on the Pico. [Latest image](https://micropython.org/download/RPI_PICO/). I am using the 'micropico' plugin for VSCODE as a development environment, but others may work as well.
-- The board can be powered by the Pico USB port.
+- The board should be powered only by the USB port on the Pico.
 - The *SLOW_CLK* jumper needs to be pulled. 
 - All *Input* switches need to be in the "off" position.
 - The *Select project* switches need to be configured to select the Zinnia design. (see picture below)
