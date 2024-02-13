@@ -27,7 +27,6 @@ OUT_PINS = [28, 27, 26, 22, 6, 7, 8, 9]  # List of out pin numbers, inverse orde
 IN_PINS = [21, 20, 19, 18, 17, 16, 15, 14]  # List of in pin numbers
 IN_CLK = 14 # In clock on GPIO9
 IN_RES = 15 # In clock on GPIO9
-SLOW_CLK = 10 # Slow clock on GPIO10
 
 # Instruction encoding
 
@@ -47,10 +46,7 @@ def initialize_gpio():
 
     # Initialize out pins GPIO as input
     for pin in OUT_PINS:
-        Pin(pin, Pin.IN)
-    
-    Pin(SLOW_CLK, Pin.IN)
-
+        Pin(pin, Pin.IN)  
 
 def set_clk(clk):
     # Set the clock to high or low
