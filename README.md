@@ -11,6 +11,8 @@ This is a slightly upgraded version of MCPU5 that was submitted for tinytapeout0
 
   - [src/](src/) Cleaned up source, Testbench, Assembler and code examples
   - See below for design description
+  - [validation](validation/) Test setup with Raspberry Pi Pico
+
 # Design Description
 
 ## Top level
