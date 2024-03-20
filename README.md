@@ -1,6 +1,6 @@
 # 🌻 Zinnia+ (MCPU5+)
 
-An 8 bit RISC CPU for [TinyTapeout02](www.tinytapeout.com). Tinytapeout combines a high number of tiny designs on a single IC to be taped out with the Open MPW-7. This offers the opportunity to actually get a design made on a real IC, but also comes with some constraints:
+An 8 bit RISC CPU for [TinyTapeout02](http://www.tinytapeout.com). Tinytapeout combines a high number of tiny designs on a single IC to be taped out with the Open MPW-7. This offers the opportunity to actually get a design made on a real IC, but also comes with some constraints:
 
 - Maximum allowed area is 150 x 170 µm² in Skywater 130nm CMOS technology (This design targeted only 100x100 µm²). The actual number of useable gates depends on cell size and routing limitations.
 - Only eight digital inputs and eight digital outputs are allowed.
